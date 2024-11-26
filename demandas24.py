@@ -13,6 +13,6 @@ st.title('Análise de Dados do Excel')
 # Exibir tabela de dados
 st.dataframe(data)
 
-# Criar um gráfico
+
 st.line_chart(data['especie'])
 
