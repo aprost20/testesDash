@@ -1,3 +1,3 @@
-!pip install streamlit pandas 
+!pip install streamlit 
 
 
