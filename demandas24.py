@@ -10,6 +10,6 @@ if uploaded_file is not None:
     st.write("Visualização dos dados:")
     st.write(data.head())
 
- 
+
 
 
