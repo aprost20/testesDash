@@ -25,4 +25,3 @@ st.bar_chart(df['NM_UF'].value_counts())
 st.bar_chart(df['NM_MUNIC'].value_counts()[:10])
 
 
-
