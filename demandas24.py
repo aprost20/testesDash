@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-st.title('Demandas TCU 2024 recebidas pelo MPO')
-df = pd.read_excel('Demandas2024.xlsx')
+st.title('Localização das comunidades quilombolas (2022)')
+df = pd.read_csv('https://raw.githubusercontent.com/adrianalite/datasets/main/BR_LQs_CD2022.csv')
 
 
 
