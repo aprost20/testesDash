@@ -1,7 +1,18 @@
+import pandas as pd
+data = pd.read_excel('/content/Demandas2024.xlsx') 
+
 import streamlit as st
 import pandas as pd
 
-st.title('TCU')
-df = pd.read_excel("Demandas2024.xlsx", sheet_name = 0)
+# Carregar dados do Excel
+data = pd.read_excel('/content/Demandas2024.xlsx')
 
+# Exibir título
+st.title('Análise de Dados do Excel')
+
+# Exibir tabela de dados
+st.dataframe(data)
+
+# Criar um gráfico
+st.line_chart(data['especie'])
 
