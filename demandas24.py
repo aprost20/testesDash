@@ -1,15 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Carregar e Visualizar Dados do Excel")
-
-uploaded_file = st.file_uploader("Carregue sua planilha Excel", type="xlsx")
-
-if uploaded_file is not None:
-    data = pd.read_excel(uploaded_file)
-    st.write("Visualização dos dados:")
-    st.write(data.head())
-
+st.title('Localização das comunidades quilombolas (2022)')
+df = pd.read_csv('https://raw.githubusercontent.com/adrianalite/datasets/main/BR_LQs_CD2022.csv')
 
 
 
