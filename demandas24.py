@@ -4,6 +4,6 @@ import matplotlib.pyplot as plt
 
 file_path = "/content/Demandas2024.xlsx"  
 data = pd.read_excel(file_path)
- 
+status_counts = data['status'].value_counts()
 
 
