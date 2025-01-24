@@ -14,7 +14,7 @@ with col2:
 
 col1, col2 = st.columns([3,1])
 with col1:
-    st.title("Demandas TCU recebidas pelo MPO em 2024")
+    st.title("Demandas TCU recebidas pelo MPO em 2023")
 
 st.markdown("---")
 
@@ -78,9 +78,6 @@ with col7:
   fig7.update_layout(title = 'Situação das Recomendações envolvendo o MPO', xaxis_title = "Providências", yaxis_title = "Quantidade de itens")
   st.plotly_chart(fig7, use_container_width = True)
      
-  with col8:
-     fig8 = px.bar(df2, x = 'ano_acordao', y = 'valor_ato', color = 'Ato')  
-     fig8.update_layout(title = 'Deliberações do TCU respondidas pelo MPO desde o início da gestão', xaxis_title = "Ano da deliberação", yaxis_title = "Quantidade de itens")
-     st.plotly_chart(fig8, use_container_width = True)
+  
   
 
